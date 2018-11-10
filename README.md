@@ -4,11 +4,11 @@
 ```bash
 cd
 ```
-### SSH
+SSH
 ```bash
 git clone git@gitlab.com:tertelgames/vim.git .vim
 ```
-### HTTPS
+HTTPS
 ```bash
 git clone https://gitlab.com/tertelgames/vim.git .vim
 ```
