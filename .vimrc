@@ -1,11 +1,36 @@
 set nocompatible
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin()
+"Vundle
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'christoomey/vim-system-copy'
+Plugin 'mattn/emmet-vim'
+Plugin 'kana/vim-text-obj-user'
+Plugin 'kana/vim-text-obj-entire'
+Plugin 'kana/vim-text-obj-indent'
+Plugin 'kana/vim-text-obj-line'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-surround'
+Plugin 'vim-scripts/ReplaceWithRegister'
+
+Bundle 'nikvdp/ejs-syntax'
+
+call vundle#end()
+"Vundle End
+
+filetype plugin indent on
 
 syntax on
 syntax enable
 
-filetype plugin indent on
+filetype plugin on
 
 set path+=**
+
+
 
 set number
 set relativenumber
@@ -15,7 +40,12 @@ set softtabstop=4
 set shiftwidth=4
 set expandtab
 
-autocmd BufRead,BufNewFile *.htm,*.html setlocal tabstop=2 shiftwidth=2 softtabstop=2
+" au BufNewFile,BufRead *.ejs set filetype=html
+
+" autocmd BufNewFile,BufRead *.html *.htm *.ejs setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+" autocmd FileType html setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+
+autocmd Bufread,BufNewFile *.java setlocal
 
 
 set showcmd
@@ -130,9 +160,6 @@ set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set backupskip=/tmp/*,/private/tmp/*
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set writebackup
-
-
-execute pathogen#infect() 
 
 let g:user_emmet_settings = {
             \'html': {
