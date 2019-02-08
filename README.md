@@ -9,6 +9,8 @@ HTTPS
 ```bash
 git clone https://gitlab.com/tertelgames/vim.git ~/.vim
 ```
+#
+
 ```bash
 mv ~/.vim/.vimrc ~/.vimrc
 ```
