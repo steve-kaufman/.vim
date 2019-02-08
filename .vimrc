@@ -1,4 +1,6 @@
 set nocompatible
+filetype off
+
 set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
@@ -7,10 +9,10 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'christoomey/vim-system-copy'
 Plugin 'mattn/emmet-vim'
-Plugin 'kana/vim-text-obj-user'
-Plugin 'kana/vim-text-obj-entire'
-Plugin 'kana/vim-text-obj-indent'
-Plugin 'kana/vim-text-obj-line'
+Plugin 'kana/vim-textobj-user'
+Plugin 'kana/vim-textobj-entire'
+Plugin 'kana/vim-textobj-indent'
+Plugin 'kana/vim-textobj-line'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
@@ -44,9 +46,6 @@ set expandtab
 
 " autocmd BufNewFile,BufRead *.html *.htm *.ejs setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 " autocmd FileType html setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
-
-autocmd Bufread,BufNewFile *.java setlocal
-
 
 set showcmd
 
