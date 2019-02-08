@@ -1,4 +1,4 @@
-# My .vim folder for linux
+# My .vim and .vimrc
 
 ## Setup
 SSH
