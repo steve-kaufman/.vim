@@ -1,21 +1,17 @@
 # My .vim folder for linux
 
-## Install
-```bash
-cd
-```
+## Setup
 SSH
 ```bash
-git clone git@gitlab.com:tertelgames/vim.git .vim
+git clone git@gitlab.com:tertelgames/vim.git ~/.vim
 ```
 HTTPS
 ```bash
-git clone https://gitlab.com/tertelgames/vim.git .vim
+git clone https://gitlab.com/tertelgames/vim.git ~/.vim
 ```
-
-
-## Setup
-Move ```.vimrc``` to ```~/```
+```bash
+mv ~/.vim/.vimrc ~/.vimrc
+```
 
 
 ## Includes
@@ -40,3 +36,4 @@ Move ```.vimrc``` to ```~/```
 
 
 [vim-scripts/ReplaceWithRegister](https://github.com/vim-scripts/ReplaceWithRegister)
+[mattn/emmet-vim](https://github.com/mattn/emmet-vim)
