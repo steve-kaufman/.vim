@@ -18,7 +18,7 @@ Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-scripts/ReplaceWithRegister'
 
-Bundle 'nikvdp/ejs-syntax'
+Bundle 'tertelgames/ejs-syntax'
 
 call vundle#end()
 "Vundle End
