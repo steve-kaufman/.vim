@@ -31,8 +31,8 @@ syntax enable
 filetype plugin on
 
 set path+=**
-
-
+set wildignore+=**/node_modules/**
+set wildignore+=/usr/include/**
 
 set number
 set relativenumber
