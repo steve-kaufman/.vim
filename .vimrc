@@ -16,9 +16,13 @@ Plugin 'kana/vim-textobj-line'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-speeddating'
 Plugin 'vim-scripts/ReplaceWithRegister'
+Plugin 'pangloss/vim-javascript'
+Plugin 'w0rp/ale'
 
 Bundle 'tertelgames/ejs-syntax'
+Bundle 'leafgarland/typescript-vim'
 
 call vundle#end()
 "Vundle End
@@ -42,10 +46,8 @@ set softtabstop=4
 set shiftwidth=4
 set expandtab
 
-" au BufNewFile,BufRead *.ejs set filetype=html
 
-" autocmd BufNewFile,BufRead *.html *.htm *.ejs setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
-" autocmd FileType html setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+autocmd BufNewFile,BufRead *.json setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 
 set showcmd
 
@@ -127,7 +129,7 @@ let mapleader=","
 
 inoremap jk <esc>
 
-inoremap <leader><CR> <CR><CR><up><esc>
+inoremap jj <CR><CR><up><esc>S
 
 nnoremap <leader>u :GundoToggle<CR>
 
@@ -143,6 +145,8 @@ let g:ctrlp_match_window = 'bottom,order:ttb'
 let g:ctrlp_switch_buffer = 0
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+
+let g:ale_enabled = 1
 
 
 if exists('$TMUX')
