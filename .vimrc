@@ -5,7 +5,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
 "Vundle
-Plugin 'VundleVim/Vundle.vim'
+Plugin 'VundleVim/Vundle.Vim'
 
 Plugin 'christoomey/vim-system-copy'
 Plugin 'mattn/emmet-vim'
